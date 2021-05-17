@@ -7,6 +7,7 @@
 
 using AIWolf.Lib;
 using System;
+using System.Reflection;
 
 namespace AIWolf.Client
 {
@@ -40,7 +41,13 @@ namespace AIWolf.Client
         {
             for (var i = 0; i < args.Length; i++)
             {
-                if (args[i] == "-d")
+                if (args[i] == "-v")
+                {
+                    var v = Assembly.GetExecutingAssembly().GetName().Version;
+                    Console.Error.WriteLine($"{v.Major}.{v.Minor}.{v.Build}");
+                    Environment.Exit(0);
+                }
+                else if (args[i] == "-d")
                 {
                     useDefaultPlayer = true;
                 }
@@ -170,7 +177,14 @@ namespace AIWolf.Client
 
         void Usage()
         {
-            Console.Error.WriteLine("Usage: ClientStarter [-h host] [-p port] -c clientClass dllName [-r roleRequest] [-n name] [-t timeout] [-d]");
+            Console.Error.WriteLine("Usage: ClientStarter [-h host] [-p port] -c clientClass dllName [-r roleRequest] [-n name] [-t timeout] [-d] [-v]");
+            Console.Error.WriteLine("            -h host : to specify server host");
+            Console.Error.WriteLine("            -p port : to specify server port");
+            Console.Error.WriteLine("            -c clientClass dllName : to specify the class of player and the dll containing it");
+            Console.Error.WriteLine("            -r roleRequest : to specify player's role");
+            Console.Error.WriteLine("            -n name : to specify player's name");
+            Console.Error.WriteLine("            -d : to use dummy player");
+            Console.Error.WriteLine("            -v : to print version");
             Environment.Exit(0);
         }
     }
