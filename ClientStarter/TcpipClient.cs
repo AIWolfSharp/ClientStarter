@@ -93,17 +93,17 @@ namespace AIWolf.Client
                     var obj = Recieve(packet);
                     if (packet.Request.HasReturn())
                     {
-                        if (obj == null)
+                        if (obj is string str)
                         {
-                            sw.WriteLine();
+                            sw.WriteLine(str);
                         }
-                        else if (obj is string)
-                        {
-                            sw.WriteLine(obj);
-                        }
-                        else // Maybe obj is Agent.
+                        else if (obj is Agent agent && agent != Agent.NONE)
                         {
                             sw.WriteLine(DataConverter.Serialize(obj));
+                        }
+                        else
+                        {
+                            sw.WriteLine();
                         }
                         sw.Flush();
                     }
