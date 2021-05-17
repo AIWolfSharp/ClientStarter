@@ -5,10 +5,10 @@
     <TargetFramework>net5.0</TargetFramework>
     <Description>The starter for AIWolf client.</Description>
     <Company>AIWolfSharp</Company>
-    <Authors>Takashi OTSUKI</Authors>
-    <Copyright>Copyright © 2017 Takashi OTSUKI</Copyright>
+    <Authors>OTSUKI Takashi</Authors>
+    <Copyright>© 2017 OTSUKI Takashi</Copyright>
     <RootNamespace>AIWolf.Client</RootNamespace>
-    <Version>2.0.1</Version>
+    <Version>2.1.0-beta</Version>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
@@ -17,8 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AIWolfServer" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+    <PackageReference Include="AIWolfServer" Version="2.2.0-beta" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
