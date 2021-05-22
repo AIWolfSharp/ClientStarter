@@ -2,13 +2,24 @@
 # ClientStarter-2.1.0-beta
 ## AIWolf.NETエージェント用クライアントスターター
 
-1. ダウンロード(まだVersion 2.0.1のままです)
+1. ダウンロード
 
     * ClientStarter with runtime:
-      * [Linux 64bit](https://github.com/AIWolfSharp/AIWolf_NET/releases/download/v2.0.1/ClientStarter-2.0.1-linux-x64.tgz)
-      * [macOS 64bit](https://github.com/AIWolfSharp/AIWolf_NET/releases/download/v2.0.1/ClientStarter-2.0.1-osx-x64.zip)
-      * [Windows 64bit](https://github.com/AIWolfSharp/AIWolf_NET/releases/download/v2.0.1/ClientStarter-2.0.1-win-x64.zip)
-      * [Windows 32bit](https://github.com/AIWolfSharp/AIWolf_NET/releases/download/v2.0.1/ClientStarter-2.0.1-win-x86.zip)
+      * [Linux 64bit](https://github.com/AIWolfSharp/ClientStarter/raw/v2/ClientStarter-2.1.0-linux-x64.tgz)
+      * [macOS 64bit](https://github.com/AIWolfSharp/ClientStarter/raw/v2/ClientStarter-2.1.0-osx-64.zip)
+      * [Windows 64bit](https://github.com/AIWolfSharp/ClientStarter/raw/v2/ClientStarter-2.1.0-win-x64.zip)
+
+1. 使用法
+
+       ClientStarter [-h host] [-p port] -c clientClass dllName [-r roleRequest] [-n name] [-t timeout] [-d] [-v]
+            -h host : サーバを指定
+            -p port : 接続ポートを指定
+            -c clientClass dllName : クラス名とdllファイルを指定
+            -r roleRequest : 希望する役職を指定
+            -n name : 名前を指定
+            -t timeour : 応答制限時間を指定
+            -d : ダミープレイヤーを使用
+            -v : バージョンを出力
 
 1. 履歴と[変更点](CHANGES-J.md)
 
