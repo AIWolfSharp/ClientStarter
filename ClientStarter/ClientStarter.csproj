@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AIWolfServer" Version="2.2.0-beta" />
+    <PackageReference Include="AIWolfServer" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="5.0.0" />
   </ItemGroup>
 

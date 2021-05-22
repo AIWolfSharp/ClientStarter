@@ -9,7 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		CHANGES-J.md = CHANGES-J.md
 		CHANGES.md = CHANGES.md
+		ClientStarter-2.1.0-linux-x64.tgz = ClientStarter-2.1.0-linux-x64.tgz
+		ClientStarter-2.1.0-osx-64.zip = ClientStarter-2.1.0-osx-64.zip
+		ClientStarter-2.1.0-win-x64.zip = ClientStarter-2.1.0-win-x64.zip
 		LICENSE = LICENSE
+		LICENSE.md = LICENSE.md
 		README-J.md = README-J.md
 		README.md = README.md
 	EndProjectSection
