@@ -1,5 +1,5 @@
 [View in English](README.md)
-# ClientStarter-2.1.0-beta
+# ClientStarter-2.1.0
 ## AIWolf.NETエージェント用クライアントスターター
 
 1. ダウンロード
